@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code-Editor</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b042917774.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="headline">Code-Editor<i class="fa-solid fa-code"></i><button onclick="copyCode()">Copy Code
+            </button></div>
+    <div class="container">
+
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i>HTML</label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3-alt"></i>Css
+            </label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-js"></i>JavaScript
+            </label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+
+        </div>
+        <div class="right">
+            <label><i class="fa-solid fa-play"></i>Output
+                <br></label>
+
+            <iframe id="output"></iframe>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <h4>Website By <a href="https://github.com/ShashwatSuman29"> ShashwatSuman29</a></h4>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
