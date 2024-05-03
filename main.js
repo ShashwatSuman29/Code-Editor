@@ -18,7 +18,7 @@ function run() {
       let htmlCode = document.getElementById("html-code").value;
       let cssCode = document.getElementById("css-code").value;
       let jsCode = document.getElementById("js-code").value;
-      let code = htmlCode + "\n<style>\n" + cssCode + "</style>\n<script>\n" + jsCode + "</script>";
+      let code = htmlCode + "\n<style>" + cssCode + "</style>\n<script>" + jsCode + "</script>";
 
       navigator.clipboard.writeText(code)
         .then(() => {
